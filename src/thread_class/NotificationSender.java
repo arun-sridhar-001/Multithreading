@@ -1,3 +1,5 @@
+package thread_class;
+
 public class NotificationSender extends Thread {
 
     private String message;
@@ -43,9 +45,8 @@ public class NotificationSender extends Thread {
         EmailNotificationThread.start();
         vendorNotificationThread.start();
 
-        Dummy dum = new Dummy(10);
 
-        System.out.println("main Thread Still running");
+        System.out.println("main Thread completed");
 
     }
 }
